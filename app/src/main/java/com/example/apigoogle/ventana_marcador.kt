@@ -29,9 +29,7 @@ class ventana_marcador(context: Context) : GoogleMap.InfoWindowAdapter {
             carreras.text = "Carreras: "+list?.get(0)
             decano.text="Decano: "+list?.get(2)
             coordenadas.text = "Latitud:"+marker.position.latitude.toString()+", Longitud:"+marker.position.longitude.toString()
-
             Picasso.get().load(list?.get(1)).into(logo)
-
         }
     }
 
