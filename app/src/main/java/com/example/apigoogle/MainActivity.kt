@@ -63,7 +63,8 @@ class MainActivity : FragmentActivity(), OnMapReadyCallback {
                     marcador?.showInfoWindow()
                 }
             },
-            { Log.d("API", "that didn't work") })
+            {  }
+        )
         queue.add(peticion)
     }
 
