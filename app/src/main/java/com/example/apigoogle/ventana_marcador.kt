@@ -15,7 +15,7 @@ class ventana_marcador(context: Context) : GoogleMap.InfoWindowAdapter {
 
     fun marcadores(marker: Marker, view: View){
         var parseo =marker.snippet.toString()
-        val list: List<String> = listOf(*parseo.split("&").toTypedArray())
+        val list: List<String> = listOf(*marker.snippet.toString().split("&").toTypedArray())
 
 
         val facultad = view.findViewById<TextView>(R.id.facultad)

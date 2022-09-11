@@ -15,7 +15,7 @@ import com.google.android.gms.maps.model.*
 import org.json.JSONArray
 import org.json.JSONObject
 
-class MainActivity : FragmentActivity(), OnMapReadyCallback, GoogleMap.OnMapClickListener {
+class MainActivity : FragmentActivity(), OnMapReadyCallback {
 
     lateinit var mMap:GoogleMap
 
@@ -65,10 +65,6 @@ class MainActivity : FragmentActivity(), OnMapReadyCallback, GoogleMap.OnMapClic
             },
             { Log.d("API", "that didn't work") })
         queue.add(peticion)
-    }
-
-    override fun onMapClick(point: LatLng) {
-
     }
 
 }
